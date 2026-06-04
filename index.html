@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viktig fråga 🍻</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#1f1f1f;
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    overflow:hidden;
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    margin:10px;
+}
+
+#ja{
+    background:#28a745;
+    color:white;
+}
+
+#nej{
+    background:#dc3545;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<h1> öl imorgon? </h1>
+
+<div>
+    <button id="ja">JA 🍺</button>
+    <button id="nej">NEJ 😴</button>
+</div>
+
+<script>
+const ja = document.getElementById("ja");
+const nej = document.getElementById("nej");
+
+let klick = 0;
+
+nej.addEventListener("click", function(e){
+    e.preventDefault();
+    klick++;
+
+    if(klick === 1){
+        nej.textContent = "fuck you neger";
+    } else if(klick === 2){
+        nej.textContent = "klicka rätt";
+    } else if(klick === 3){
+        nej.textContent = "Sista chansen";
+    }
+
+    if(klick < 4){
+        nej.style.position = "absolute";
+        nej.style.left =
+            Math.random() * (window.innerWidth - 150) + "px";
+        nej.style.top =
+            Math.random() * (window.innerHeight - 80) + "px";
+    } else {
+        nej.style.display = "none";
+    }
+});
+
+ja.addEventListener("click", function(){
+    document.body.innerHTML = `
+        <h1>🍻 LEGENDARISKT 🍻</h1>
+        <h2>Då ses vi imorgon grabbar 😎</h2>
+        <p>Nu återstår bara att bestämma tid och plats.</p>
+    `;
+});
+</script>
+
+</body>
+</html>
