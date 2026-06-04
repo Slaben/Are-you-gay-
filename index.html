@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viktig fråga 🍻</title>
+<title>Are you gay?</title>
 
 <style>
 body{
@@ -13,7 +13,12 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background:#1f1f1f;
+
+    background-image: url('IMG_2852.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color:white;
     font-family:Arial,sans-serif;
     text-align:center;
@@ -47,11 +52,11 @@ button{
 
 <body>
 
-<h1> öl imorgon? </h1>
+<h1>Are you gay?</h1>
 
 <div>
-    <button id="ja">JA 🍺</button>
-    <button id="nej">NEJ 😴</button>
+    <button id="ja">YEs im very gay VAMOS CARLIHOOO</button>
+    <button id="nej">No im not gay!</button>
 </div>
 
 <script>
@@ -65,19 +70,17 @@ nej.addEventListener("click", function(e){
     klick++;
 
     if(klick === 1){
-        nej.textContent = "fuck you neger";
+        nej.textContent = "Liar you are gay try again!";
     } else if(klick === 2){
-        nej.textContent = "klicka rätt";
+        nej.textContent = "Lol u are still gay!";
     } else if(klick === 3){
-        nej.textContent = "Sista chansen";
+        nej.textContent = "HAHAHAHA VERY GAY LAST CHANCE";
     }
 
     if(klick < 4){
         nej.style.position = "absolute";
-        nej.style.left =
-            Math.random() * (window.innerWidth - 150) + "px";
-        nej.style.top =
-            Math.random() * (window.innerHeight - 80) + "px";
+        nej.style.left = Math.random() * (window.innerWidth - 150) + "px";
+        nej.style.top = Math.random() * (window.innerHeight - 80) + "px";
     } else {
         nej.style.display = "none";
     }
@@ -85,9 +88,9 @@ nej.addEventListener("click", function(e){
 
 ja.addEventListener("click", function(){
     document.body.innerHTML = `
-        <h1>🍻 LEGENDARISKT 🍻</h1>
-        <h2>Då ses vi imorgon grabbar 😎</h2>
-        <p>Nu återstår bara att bestämma tid och plats.</p>
+        <h1>nigger</h1>
+        <h2>nigger</h2>
+        <p>meow meow.</p>
     `;
 });
 </script>
